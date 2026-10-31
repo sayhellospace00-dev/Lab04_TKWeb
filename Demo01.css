@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    height: 300px;
+    background-image: url("images_Lab04/images2/bg.jpg");
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#menu {
+    position: absolute;
+    top: 70px;
+    left: 300px;
+    width: 220px;
+}
+
+#menu a {
+    display: block;
+    margin: 3px 0;
+    padding: 10px 14px 10px 68px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+
+    background-image: url("images_Lab04/images2/links-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#banner{
+  position: absolute;
+  top: 0px;              
+  left: 55%;
+  transform: translateX(-50%);
+  
+  width: 650px;           
+  height: 300px;          
+
+  background-image: url("images_Lab04/images2/header.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;  
+}
+
+#banner_text{
+  position: absolute;
+  left: 120px;
+  right: 80px;
+  top: 95px;
+
+  background: rgba(248, 229, 188, 0.85);
+  border: 1px solid rgba(160,120,60,0.35);
+  padding: 10px 14px;
+
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  line-height: 1.4;
+}
+
+
+#body_table{
+  width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 4px solid #2f79b8; 
+  box-shadow: none;                 
+  overflow: hidden;                 
+}
+
+#body_table::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
+#sidebar{
+  float: left;
+  width: 240px;
+  padding: 18px 18px 18px 18px;
+  border-right: 1px dotted #bfbfbf; 
+  box-sizing: border-box;
+}
+
+
+#news_title,
+#test_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 8px 0 10px;
+  text-transform: uppercase;
+  color: #000; 
+}
+
+
+.pink{
+  color: #d1127a;
+}
+
+#news_item{
+  margin-bottom: 18px;
+}
+
+#news_date{
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+#news_text,
+#test_text{
+  font-size: 11px;
+  color: #444;
+  line-height: 1.45;
+}
+
+
+#readmore{
+  display: block;
+  text-align: right;
+  margin-top: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #d1127a;
+  text-decoration: underline;
+}
+
+
+#testimonials_1 #news_1,
+#testimonials_2 #news_1{
+  font-weight: bold;
+  font-size: 11px;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+
+#main{
+  float: left;
+  width: 660px;              
+  padding: 18px 22px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+
+#welcome_row{
+  display: flex;
+  align-items: center;
+}
+
+#hat_col{
+  margin-right: 8px;
+}
+
+#welcome_text{
+  font-weight: bold;
+  color: #000;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0;       
+}
+
+#welcome_table::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
+#content_table{
+  margin-top: 10px;
+}
+
+
+.clear{
+  clear: both;
+}
+
+
+#image_col{
+  float: left;
+  width: 240px;
+}
+
+#pen{
+  width: 220px;
+  height: auto;
+  border: 1px solid #cfcfcf;
+  padding: 4px;
+  background: #fff;
+}
+
+
+#text_col{
+  margin-left: 260px;  
+}
+
+#text_col p{
+  margin: 0 0 10px 0;
+  font-size: 11px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+#bottom_left{
+  float: left;
+  width: calc(100% - 260px);
+}
+
+#bottom_left p{
+  margin: 0 0 10px 0;
+  font-size: 11px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+#links{
+  float: right;
+  width: 240px;
+}
+
+#links a{
+  display: block;
+  padding: 6px 0;
+  font-size: 11px;
+  color: #d1127a;
+  text-decoration: underline;
+  border-bottom: 1px dotted #bfbfbf;
+}
+
+
+#footer{
+  width: 900px;
+  margin: 0 auto 20px auto;
+  background: #333;
+  color: #cfcfcf;
+  text-align: center;
+  padding: 12px;
+  font-size: 11px;
+  border: 1px solid #2a2a2a;
+  box-sizing: border-box;
+}
+/* Hiệu ứng hover cho ảnh */
+#hat, #pen{
+  display: block;               /* tránh bị “nhảy” do inline img */
+}
+
+/* 1) Hover vào ảnh cap: rung */
+#hat{
+  transform-origin: center;
+}
+
+#hat:hover{
+  animation: shake 0.4s ease-in-out infinite;
+}
+
+@keyframes shake{
+  0%   { transform: translateX(0) rotate(0deg); }
+  15%  { transform: translateX(-2px) rotate(-2deg); }
+  30%  { transform: translateX(2px) rotate(2deg); }
+  45%  { transform: translateX(-2px) rotate(-2deg); }
+  60%  { transform: translateX(2px) rotate(2deg); }
+  75%  { transform: translateX(-1px) rotate(-1deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+/* 2) Hover vào ảnh construction: phóng to */
+#image_col{
+  overflow: hidden; /* để phóng to không tràn ra ngoài khung */
+}
+
+#pen{
+  transition: transform 0.25s ease;
+}
+
+#pen:hover{
+  transform: scale(1.12);
+}
